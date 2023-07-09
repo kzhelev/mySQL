@@ -210,5 +210,5 @@ FROM
         JOIN
     `rivers` r ON r.`id` = cr.`river_id`
 GROUP BY c.`country_name`
-ORDER BY 'highest_peak_elevation' DESC , 'longest_river_length' DESC , c.`country_name`
+ORDER BY `highest_peak_elevation` DESC , `longest_river_length` DESC , c.`country_name`
 LIMIT 5;
